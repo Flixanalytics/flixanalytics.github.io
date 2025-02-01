@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlixAnalytics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">FlixAnalytics</div>
+    <ul class="nav-links">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#models">Models</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-theme-toggle">
+      <button id="light-theme-toggle" class="theme-toggle light-theme">
+        <i class="fas fa-sun"></i>
+      </button>
+      <button id="dark-theme-toggle" class="theme-toggle dark-theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- Main Sections -->
+  <main>
+    <!-- Profile Section -->
+    <section id="profile" class="section morphic-section">
+      <h2 class="section-title animate__animated animate__fadeInDown">Profile</h2>
+      <div class="profile-container morphic-card">
+        <div class="profile-header">
+          <div class="profile-image-wrapper">
+            <svg class="profile-image" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <clipPath id="circle-clip">
+                  <circle cx="100" cy="100" r="90"/>
+                </clipPath>
+                <linearGradient id="profile-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff3333;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="200" height="200" fill="url(#profile-gradient)"/>
+              <image href="karan.png" 
+                     width="200" 
+                     height="200" 
+                     clip-path="url(#circle-clip)"
+              />
+            </svg>
+          </div>
+          <div class="profile-titles">
+            <h1>Brian Kiiru</h1>
+            <p class="professional-title">Data Scientist | Economist | Statistitian</p>
+          </div>
+        </div>
+        
+        <div class="profile-summary">
+          <p>Driven by a passion for transforming complex data into actionable insights, I specialize in machine learning, predictive analytics, and advanced statistical modeling. With expertise in uncovering trends and patterns, I create intelligent, data-driven solutions that power decision-making and innovation, particularly in the streaming and entertainment industry. My background in economics and statistics enables me to bridge the gap between analytical rigor and real-world application, delivering impactful outcomes that optimize performance and drive growth.</p>
+        </div>
+        
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Published Models</span>
+          </div>
+        </div>
+        
+        <div class="contact-links">
+          <a href="mailto:kiiru058@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com/in/brian-karani-08b98025b" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/flixanalytics" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href=https://facebook.com/karani.b" target="_blank" class="contact-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section morphic-section">
+      <h2 class="section-title animate__animated animate__fadeInDown">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card morphic-card">
+          <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="project1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#ff3333;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <rect width="300" height="250" fill="url(#project1-gradient)" rx="20"/>
+            <text x="50%" y="50%" text-anchor="middle" fill="white" dy=".3em" font-size="24">Netflix Rec</text>
+          </svg>
+           <!-- Projects start-->
+          <div class="project-content">
+            <h3>Netflix Recommendation System</h3>
+            <p>Advanced machine learning model leveraging collaborative filtering and deep learning to provide personalized movie recommendations.</p>
+            <a href="https://github.com/Flixanalytics/netflixApp" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="project-card morphic-card">
+          <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="project2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff3333;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <rect width="300" height="250" fill="url(#project2-gradient)" rx="20"/>
+            <text x="50%" y="50%" text-anchor="middle" fill="white" dy=".3em" font-size="24">Trend Viz</text>
+          </svg>
+          <!-- Projects 1 end -->
+          <div class="project-content">
+            <h3>Chat App</h3>
+            <p>Our latest Custom ChatApp</p>
+            <a href="https://github.com/Flixanalytics/chatapp" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="section morphic-section">
+      <h2 class="section-title animate__animated animate__fadeInDown">Models</h2>
+      <div class="models-grid">
+        <div class="model-card morphic-card">
+          <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="model1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff6600;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#ff3333;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <rect width="300" height="250" fill="url(#model1-gradient)" rx="20"/>
+            <text x="50%" y="50%" text-anchor="middle" fill="white" dy=".3em" font-size="24">Content AI</text>
+          </svg>
+          <div class="model-content">
+            <h3>Content Classifier</h3>
+            <p>AI-powered multi-label classification model using transformer architectures to accurately categorize streaming content across complex genre boundaries.</p>
+            
+            <div class="model-metrics">
+              <div class="metric">
+                <span class="metric-label">Accuracy</span>
+                <div class="metric-bar">
+                  <div class="metric-fill" style="width: 92%;">92%</div>
+                </div>
+              </div>
+              <div class="metric">
+                <span class="metric-label">F1 Score</span>
+                <div class="metric-bar">
+                  <div class="metric-fill" style="width: 89%;">0.89</div>
+                </div>
+              </div>
+              <div class="metric-details">
+                <div class="metric-item">
+                  <span class="metric-icon">📊</span>
+                  <span class="metric-text">Dataset Size: 50K Entries</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-icon">🏷️</span>
+                  <span class="metric-text">Labels: 20+ Genres</span>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#" class="btn download-btn">Download Model</a>
+          </div>
+        </div>
+        <div class="model-card morphic-card">
+          <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="model2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#ff3333;stop-opacity:0.8" />
+                <stop offset="100%" style="stop-color:#ff6600;stop-opacity:0.8" />
+              </linearGradient>
+            </defs>
+            <rect width="300" height="250" fill="url(#model2-gradient)" rx="20"/>
+            <text x="50%" y="50%" text-anchor="middle" fill="white" dy=".3em" font-size="24">Trend ML</text>
+          </svg>
+          <div class="model-content">
+            <h3>Trend Predictor</h3>
+            <p>Machine learning ensemble model integrating time series analysis and sentiment prediction to forecast emerging streaming platform trends.</p>
+            
+            <div class="model-metrics">
+              <div class="metric">
+                <span class="metric-label">Prediction Accuracy</span>
+                <div class="metric-bar">
+                  <div class="metric-fill" style="width: 85%;">85%</div>
+                </div>
+              </div>
+              <div class="metric">
+                <span class="metric-label">R-squared</span>
+                <div class="metric-bar">
+                  <div class="metric-fill" style="width: 82%;">0.82</div>
+                </div>
+              </div>
+              <div class="metric-details">
+                <div class="metric-item">
+                  <span class="metric-icon">📈</span>
+                  <span class="metric-text">Forecast Horizon: 6 Months</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-icon">🔄</span>
+                  <span class="metric-text">Update Frequency: Monthly</span>
+                </div>
+              </div>
+            </div>
+            
+            <a href="https://github.com/example/trend-predictor" class="btn download-btn">Download Model</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- Privacy Policy Section -->
+ <section id="privacy" class="section morphic-section">
+  <h2 class="section-title animate__animated animate__fadeInDown">Privacy Policy</h2>
+  <div class="privacy-content morphic-card">
+    <div class="privacy-section">
+      <h3>Information We Collect</h3>
+      <p>At FlixAnalytics, we are committed to protecting your privacy. We collect minimal personal information necessary to provide our services.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h3>How We Use Your Data</h3>
+      <p>Any data collected is used solely for improving our services, analytics, and providing personalized experiences. We do not sell or share your personal information with third parties.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h3>Data Protection</h3>
+      <p>We implement industry-standard security measures to protect your data from unauthorized access, alteration, or disclosure.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h3>Cookies and Tracking</h3>
+      <p>We use minimal cookies to enhance user experience and site functionality. You can disable cookies in your browser settings if preferred.</p>
+    </div>
+
+    <div class="privacy-section">
+      <h3>Your Rights</h3>
+      <p>You have the right to access, correct, or delete your personal information. Contact us at privacy@flixanalytics.com for any privacy-related requests.</p>
+    </div>
+
+    <div class="privacy-disclaimer">
+      <p>Last Updated: January 2024</p>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; FlixAnalytics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
